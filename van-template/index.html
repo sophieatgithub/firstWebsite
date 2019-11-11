@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Van Modifier</title>
+        <link rel="stylesheet" type="text/css" href="reset.css">
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    <body>
+        <div id="outerContainer">
+
+            <div class="container" id="vanExterior">
+                <div id="vanInterior">
+                    <div id="rightSideInsulation" class="insulation"></div>
+                    <div id="innerArea">
+                        <div id="bed"></div>
+                        <div id="rearDoorInsulation" class="insulation"></div>
+                    </div>
+                    <div id="leftSideInsulation" class="insulation"></div>
+                </div>
+            </div>
+            
+            <div class="container" id="variablesContainer">
+                <div class="variable">Model</div>
+                <div class="variable selectionContainer">
+                    <div class="model" id="L1">L1</div>
+                    <div class="model" id="L2">L2</div>
+                    <div class="model" id="L3">L3</div>
+                    <div class="model" id="L4">L4</div>
+                </div>
+                <div class="variable">Insulation</div>
+                <div class="variable">
+                    <span id="insulation" class="dot">
+                        <span id="selectionDot" class="selectionDot"></span>
+                    </span>
+                </div>
+                <div class="variable">Mattress Origin</div>
+                <div class="variable">
+                    <form>
+                    <select id="euOrUk">
+                        <option id="eu" selected>EU</option>
+                        <option id="uk">UK</option>
+                    </select>
+                    </form>
+                </div>
+                <div class="variable">Mattress Size</div>
+                <div class="variable">
+                    <form>
+                        <div id="euMattressOptions">
+                            <select id="selectEuOptions">
+                                <option id="euSingle" class="eu mattressSize">Single EU</option>
+                                <option id="euDouble" class="eu mattressSize" selected>Double EU</option>
+                                <option id="euKing" class="eu mattressSize">King EU</option>
+                                <option id="bet1" class="eu mattressSize">bet1</option>
+                            </select>
+                        </div>
+                        <div id="ukMattressOptions">
+                            <select id="selectUkOptions">
+                                <option id="ukSingle" class="uk mattressSize">Single UK</option>
+                                <option id="ukSmallDouble" class="uk mattressSize">Small Double UK</option>
+                                <option id="ukDouble" class="uk mattressSize" selected>Double UK</option>
+                                <option id="ukKing" class="uk mattressSize">King UK</option>
+                                <option id="ukSuperKing" class="uk mattressSize">Super King UK</option>
+                            </select>
+                        </div>
+                    </form>
+                </div>
+                <div class="variable">Bed Orientation</div>
+                <div class="variable"></div>
+                <div class="variable">Bed Position</div>
+                <div class="variable selectionContainer">
+                    <div class="mattressOrientation" id="bedRight">Right</div>
+                    <div class="mattressOrientation" id="bedMiddle">Middle</div>
+                    <div class="mattressOrientation" id="bedLeft">Left</div>
+                </div>
+                <div class="variable">v7</div>
+                <div class="variable"></div>
+                <div class="variable">v8</div>
+                <div class="variable"></div>
+                <div class="variable">v9</div>
+                <div class="variable"></div>
+                <div class="variable">v10</div>
+                <div class="variable"></div>
+                <div class="variable">v11</div>
+                <div class="variable"></div>
+                <div class="variable">v12</div>
+                <div class="variable"></div>
+
+    
+            </div>
+    </div>
+        <script src="scripts.js"></script> 
+    </body>
+</html>

@@ -1,0 +1,155 @@
+#outerContainer {
+    display: flex;   
+    flex-direction: column;     
+    justify-content: space-around;
+    align-items: center;
+    min-height: 100vh;
+    width: 100%;
+    background-color: antiquewhite;
+}
+
+/*Van diagram*/
+#vanExterior {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 201.93px;
+    width: 591px;   
+    background-color: lightgray;
+}
+
+#vanInterior {
+    display: flex;
+    flex-direction: column;
+    height: 178px;
+    width: 326.5px;    
+    margin-right: 10px;
+    background-color: antiquewhite;
+}
+
+/*Van Insulation*/
+.insulation {
+    display: none;
+    background-color: darkslategrey;
+}
+
+.insulation.isSelected {
+    display: block;
+}
+
+#rightSideInsulation {
+    width: 326.5px;
+    height: 2px;
+}
+
+#innerArea {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+    #bed {
+        width: 200px;
+        height: 140px;
+        background-color: darkcyan;
+        font: 1.2em sans-serif;
+        text-align: center;
+    }
+
+    #rearDoorInsulation {
+        align-self: flex-end;
+        width: 1.5px;
+        height: 174px;
+    }
+
+#leftSideInsulation {
+    width: 326.5px;
+    height: 2px;
+
+}
+
+
+
+
+/* Variables User Interface */
+#variablesContainer {
+    display: grid;
+    grid-template-columns: auto auto auto auto; 
+    background-color: antiquewhite;
+}
+
+/* Individual variables */
+.variable {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 35px;
+    width: 100px;
+    padding: 20px;
+    padding-left: 40px;
+    padding-right: 40px;
+    background-color: antiquewhite;
+    border: 1px solid black;    
+    /*font*/
+    color: black;
+    font: 1.2em sans-serif;
+    text-align: center;
+}  
+
+/*Model modifier*/
+.selectionContainer {
+    justify-content: space-around;
+}
+
+.model {
+    font-size: 0.9em;
+    border: 0.5px solid grey;
+    padding: 4px;
+}
+
+.modelSelected {
+    transform: scale(1.1);
+    border-color: grey;
+    box-shadow: 0 0 1rem grey;
+}
+
+/*Insulation selector*/
+.dot {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 25px;
+    width: 25px;
+    background-color: #bbb;
+    border-radius: 50%;
+  }
+
+.selectionDot {
+    display: none;
+    height: 8px;
+    width: 8px;
+    background-color: rgb(49, 46, 46);
+    border-radius: 50%;
+}
+
+.dotSelected {
+    display: block;
+}
+
+/*Mattress Selection*/
+
+#ukMattressOptions {
+    display: none;
+}
+
+.mattressOrientation {
+    font-size: 0.9em;
+    border: 0.5px solid grey;
+    padding: 4px;
+}
+
+.mattressOrientationSelected {
+    transform: scale(1.05);
+    border-color: grey;
+    box-shadow: 0 0 1rem grey;
+}
