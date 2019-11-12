@@ -4,8 +4,12 @@
     justify-content: space-around;
     align-items: center;
     min-height: 100vh;
-    width: 100%;
-    background-color: antiquewhite;
+    width: 100vw;
+    background-color: white;
+}
+
+header {
+    font: 1.6em sans-serif;
 }
 
 /*Van diagram*/
@@ -24,16 +28,17 @@
     height: 178px;
     width: 326.5px;    
     margin-right: 10px;
-    background-color: antiquewhite;
+    background-color: white;
 }
 
 /*Van Insulation*/
 .insulation {
-    display: none;
+    visibility: hidden;
     background-color: darkslategrey;
 }
 
 .insulation.isSelected {
+    visibility: visible;
     display: block;
 }
 
@@ -45,15 +50,14 @@
 #innerArea {
     display: flex;
     justify-content: flex-end;
-    align-items: center;
+    align-items: flex-end;
 }
 
     #bed {
         width: 200px;
         height: 140px;
-        background-color: darkcyan;
+        background-color: #0637D7;
         font: 1.2em sans-serif;
-        text-align: center;
     }
 
     #rearDoorInsulation {
@@ -75,7 +79,7 @@
 #variablesContainer {
     display: grid;
     grid-template-columns: auto auto auto auto; 
-    background-color: antiquewhite;
+    background-color: white;
 }
 
 /* Individual variables */
@@ -88,7 +92,7 @@
     padding: 20px;
     padding-left: 40px;
     padding-right: 40px;
-    background-color: antiquewhite;
+    background-color:white;
     border: 1px solid black;    
     /*font*/
     color: black;

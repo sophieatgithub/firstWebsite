@@ -276,6 +276,33 @@ function ukKingMattress () {
 function ukSuperKingMattress () {
     alert("UK Super Kings don't fit")
 }
+///////////////Duvet Color
+var colorWell;
+var defaultColor = "#0637D7";
+
+window.addEventListener("load", startup, false);
+
+function startup() {
+    colorWell = document.querySelector("input");
+    colorWell.value = defaultColor;
+    colorWell.addEventListener("input", updateFirst, false);
+    colorWell.addEventListener("change", updateAll, false);
+    colorWell.select();
+}
+
+function updateFirst(event) {
+    var bed = document.querySelector("#bed");
+
+    if(bed) {
+        bed.style.backgroundColor = event.target.value;
+    }
+}
+
+function updateAll(event) {
+    document.querySelectorAll("#bed").forEach(function(bed){
+        bed.style.color = event.target.value;
+    });
+}
 
 ///////////////Mattress Orientation
 
@@ -295,7 +322,7 @@ function bedRightOrientation() {
     const button = document.querySelector('#bedRight');
     button.classList.add('mattressOrientationSelected');
 
-    //Changing van dimensions to match model selected by user
+    //Changing van dimensions to match orientation selected by user
     document.getElementById("innerArea").style.alignItems = "flex-start";
 }
 
@@ -309,7 +336,7 @@ function bedMiddleOrientation() {
     const button = document.querySelector('#bedMiddle');
     button.classList.add('mattressOrientationSelected');
 
-    //Changing van dimensions to match model selected by user
+    //Changing van dimensions to match orientation selected by user
     document.getElementById("innerArea").style.alignItems = "center";
 }
 
@@ -323,7 +350,7 @@ function bedLeftOrientation() {
     const button = document.querySelector('#bedLeft');
     button.classList.add('mattressOrientationSelected');
 
-    //Changing van dimensions to match model selected by user
+    //Changing van dimensions to match orientation selected by user
     document.getElementById("innerArea").style.alignItems = "flex-end";
 }
 
