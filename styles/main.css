@@ -157,7 +157,7 @@ body, html {
 .welcome {
     height: 20rem;
     background-color:#201E1F;
-    color:#6B8EAE;
+    color:white;
     text-align: center;
     font-size: 2em;
 }
